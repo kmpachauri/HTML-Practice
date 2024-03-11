@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table -: row & col span</title>
+
+    <style>
+        table,tr,td{
+            border: 2px solid;
+            border-collapse:collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<!-- Table -: row span & col span 
+row span -: it is used to span(increase) multiple rows
+column span -: it is used to span(increase) multiple column -->
+<body>
+    <table>
+        <colgroup>
+            <col span="">
+            <col span="" style="border: 3px solid red;"> 
+            <col span="" style="background-color: aqua;">
+            <col span="" style="width: 125px ; background-color: red;">   
+            <!-- <col span="" style="visibility:collapse;"> -->
+         </colgroup> 
+       
+        <tr>
+            <td colspan="2">Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td> -->
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <td rowspan="3">Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>    
+            <td>Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td> -->
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td> -->
+            <td >Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td colspan="2" rowspan="2">Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td> -->
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td> -->
+        </tr>
+        <tr>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Jai Bajrang Bali </td>
+            <!-- <td>Jai Bajrang Bali </td> -->
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+        <tr>
+            <!-- <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td> -->
+            <td>Jai Bajrang Bali </td>
+            <td>Jai Bajrang Bali </td>
+        </tr>
+    </table>
+</body>
+</html>

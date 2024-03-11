@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width;" initial-scale="1.0">
+        <title>Form using Input and label.</title>
+    </head>
+
+    <body>
+        <h3>Basic form:-</h3>
+        <p>input and label tags are used inside form tag.</p>
+    
+        <form action="/Images/" target="_blank" autocomplete="off" method="get">
+
+            <fieldset>
+
+                <legend>Personal Details :</legend>
+                <label for="first_name">First Name :</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Aman">
+                <br><br>
+                <label for="last_name">Last Name :</label>
+                <input type="text" id="last_name" name="last_name" placeholder="sharma">
+                <br><br>
+                <label for="roll_no">Roll No. :</label>
+                <input type="text" id="roll_no" name="roll_no" placeholder="21ECTCS013" pattern="[0-9]{2}[A-Z]{5}[0-9]{3}">
+                <br><br>
+                <label for="contact">Contact Number :</label>
+                <input type="tel" id="contact" name="contact" placeholder="+918302074684" >
+                <br><br>
+                <label for="Email">Email id :</label>
+                <input type="email" id="Email" name="Email" placeholder="example123@gmail.com">
+            </fieldset>
+            <br><br>
+            
+            <h4>What do you Want to Become ?</h4>
+            <input type="radio" id="radio_button" name="radio_button">
+            <label for="radio_button">Full Stack Developer</label>
+            <br>
+            <input type="radio" id="radio_button" name="radio_button">
+            <label for="radio_button">Frontend Developer</label>
+            <br>
+            <input type="radio" id="radio_button" name="radio_button">
+            <label for="radio_button">Backend Developer</label>
+            <br>
+            <input type="radio" id="radio_button" name="radio_button">
+            <label for="radio_button">Android Developer</label>
+            <br>
+            <input type="radio" id="radio_button" name="radio_button">
+            <label for="radio_button">ios Developer</label>
+            <br> <br>
+
+            <h4>what is your favorite language ?</h4>
+            <input type="checkbox" id="chechkbox" name="chechkbox">
+            <label for="chechkbox">Java</label>
+            <br>
+            <input type="checkbox" id="chechkbox" name="chechkbox">
+            <label for="chechkbox">C/C++</label>
+            <br>
+            <input type="checkbox" id="chechkbox" name="chechkbox">
+            <label for="chechkbox">Python</label>
+            <br>
+            <input type="checkbox" id="chechkbox" name="chechkbox">
+            <label for="chechkbox">JavaScript</label>
+            <br>
+            <input type="checkbox" id="chechkbox" name="chechkbox">
+            <label for="chechkbox">Kotlin</label>
+            <br>
+            <br>
+
+            <label for="codings" ><b>Choose a language used in web Development :</b></label>
+            <select name="coding" id="codings" size="1" multiple >
+                <option >Java</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="Kotlin">Kotlin</option>
+                <option value="JavaScript" selected>JavaScript</option>
+            </select>
+            <p style="color: red;">(hold ctrl key to select more than one language !!!)</p>       
+            
+
+            <h4>Profiency level =  0 <input type="range" value="10" > 100 </h4>
+           
+
+            
+            <label for="Mobile"><b>Which Company Phone do you use :</b> </label>
+            <input list="Mobile">
+            <datalist id="Mobile">
+                <option >iphone</option>
+                <option value="Samsung"></option>
+                <option value="Nokia"></option>
+                <option value="Motorola"></option>
+                <option value="Oneplus"></option>
+                <option value="Redmi"></option>
+            </datalist>
+            <br><br>
+
+            <label for="files">Upload Documents :</label>
+            <input type="file" id="files" name="files" multiple required>
+            <br><br>
+            <textarea name="feedback" id="feedback" cols="70" rows="8">
+If you have any doubt or suggestion,please write.
+            </textarea>
+            <br>
+
+            
+            <button type="button" ondblclick="alert('Please fill all details correctly !!')">Cilck here</button>
+
+            <input type="submit" value="Submit">
+
+        
+        
+        </form>
+
+    
+    
+    </body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Using form tag -: when we submit we can take a action -->
+    <h1>Enter Your Details :</h1>
+
+    <form action="https://www.w3schools.com/html/html_forms.asp">
+        <label for="name"> Username :</label>
+        <input type="text" name="Username">
+        <br>
+        <br>
+        <label for="name"> Password :</label>
+        <input type="password" name="Password " >
+        <br>
+        <br>
+        <label for="name"> Date of Birth  :</label>
+        <input type="date" name="Date of Birth ">
+        <br>
+        <br>
+        <!-- <label for="name"> Submit :</label> -->
+        <input type="submit" value="Click here to submit">
+    </form>
+
+<!--     
+    using Table tag same as form tag but diff. is that we 
+    can not take action as form tag  -->
+    <h1>Enter Your Details :</h1>
+
+    <table>
+        <tr>
+            <td> <label for="name"> Username :</label></td>
+            <td><input type="text" name="Username"></td>
+        </tr>
+        <tr>
+            <td><label for="name"> Password :</label></td>
+            <td><input type="text" name="Password " ></td>
+        </tr>
+        <tr>
+            <td> <label for="name"> Date of Birth  :</label></td>
+            <td> <input type="date" name="Date of Birth "></td>
+        </tr>
+        <!-- <tr><td style="text-align: right;"> <button>Submit</button></td></tr> -->
+        
+    </table>
+    <br>
+    <button>Submit</button>
+    
+    <!-- <label for="name"> Submit :</label>
+    <input type="button" name="Submit "> not so much in practice -->
+    
+
+</body>
+</html>

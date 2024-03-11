@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        First JavaScript Easy Project 
+    </h1>
+
+    <p>
+        Click Button to on or off light !!!
+    </p>
+
+    <img id="light" src="/Images/Light_off.jpg" alt="light off"
+         height="250px">
+
+    <p style="padding-left: 10%;">
+        <button type="button" onclick="Light(1)">Light On </button> 
+        
+        <button type="button" onclick="Light(0)">Light Off </button> 
+    </p>
+
+    <script>
+        function Light(sw){
+            var bulb;
+
+            if (sw==0) {
+                bulb = "/Images/Light_off.jpg"
+            } else {
+                bulb ="/Images/Light_on.png"
+            }
+
+            document.getElementById("light").src = bulb;
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<body>
+    <h1>Complex Form</h1>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="female">
+        <label for="female">Female</label>
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="United States">United States</option>
+            <option value="India">India</option>
+            <option value="russia">Russia</option>
+            <option value="Uk">United Kingdom</option>
+        </select>
+       
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <label for="street">Address Street</label>
+            <input type="text" id="street" name="street">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip">
+        </legend>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Information</legend>
+
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="50" rows="5"></textarea>
+
+        <label for="term">I agree to the term of service</label>
+        <input type="checkbox" id="term" name="term">
+    </fieldset>
+    <input type="submit" value="Submit">
+</body>
+</html>

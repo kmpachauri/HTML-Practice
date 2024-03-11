@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE TAG </title>
+
+    <style>
+        body{
+            background-image: url(/Images/Hanumaan.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+            
+        }
+        p{
+            color:darkblue;
+        }
+        h2{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image </h2>
+   <p>
+    Jai Bajrang Bali, Jai Shri Ram,Jai shri krishan
+</p>
+    <img src="/Images/A._P._J._Abdul_Kalam.jpg" alt="Hanumaan " width="250px" height="160" style="float: left;" >
+    
+    <img src="/Images/Linux_torvalds.jpeg" alt="Hanumaan " style="width: 300px;height: 180px;" >
+
+   
+    <h2>Image as a Link</h2>
+    <a href="https://in.linkedin.com" target="_blank">Go to linkedin</a><br>
+    <a href="https://in.linkedin.com" target="_blank">
+        <img src="/Images/limitless-symbol.jpg" alt="Limitless" style="width: 80px;height: 40px;" target="_blank">
+    </a>
+
+    <h2>Image Map </h2>
+    <p>map tag is used for image map <br>
+       & are tag to define are in image as rect,circle,poly,default <br>
+       We have to use usemap attribute in &lt;img &gt;tag and same in &lt;map (name Attribute) &gt; <br>
+    </p>
+    <img src="https://s3.amazonaws.com/media.greatplacetowork.com/images/photos/478110.jpg"
+         alt="Place to Work" style="width: 450px;height: 230px; " usemap="#placetowork" >
+
+     <map name="placetowork">
+        <area shape="rect" coords="164,38,310,358" href="https://en.wikipedia.org/wiki/Laptop" alt="Laptop wiki" title="Learn more on wikipedia about laptop" target="_blank">
+     </map>  
+
+     
+     
+     
+</body>
+</html>

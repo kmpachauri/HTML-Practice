@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+</head>
+<body>
+    <h1>Javascript </h1>
+    <p id="demo"> hello Html !</p>
+    <button type="button" ondblclick="myfun()">say hello to javascript </button>
+
+    <p id="demo2">Hi ! This is my first script code with html ! </p>
+    <button type="button" onclick="myfun2()">click to change text  </button>
+
+    
+
+    <script>
+        function myfun(){
+            document.getElementById("demo").innerHTML="Hello JavaScript !";
+        }
+        function myfun2(){
+            document.getElementById("demo2").innerHTML="DUDI Chutiya h Aaj ye sabit ho gaya !!!";
+            document.getElementById("demo2").style.fontSize = "32px";
+            document.getElementById("demo2").style.color="red";
+            document.getElementById("demo2").style.backgroundColor="yellow";
+
+        }
+    </script>
+
+
+</body>
+</html>
